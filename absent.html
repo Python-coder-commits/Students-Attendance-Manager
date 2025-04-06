@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Absent List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance Manager</h1>
+        
+        <div class="selections">
+            <select id="classSelect">
+                <option value="IX C" selected>IX C</option>
+            </select>
+
+            <select id="attendanceType">
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+        </div>
+
+        <div class="student-list" id="studentList">
+            <!-- Students will be added via JavaScript -->
+        </div>
+
+        <button id="submitBtn">Generate Report</button>
+    </div>
+
+    <footer>Crafted by Siddharth Shandilya</footer>
+    <script src="script.js"></script>
+</body>
+</html>
